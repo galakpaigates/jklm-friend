@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kavivanar', cursive;
+    overflow-x: scroll;
+    animation-fill-mode: forwards;
+}
+
+.header {
+    width: auto;
+    background-color: hotpink;
+    height: 70px;
+    box-shadow: 0px 4px 10px gray;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+@keyframes slidedown {
+    0% {opacity: 0; margin-top: -100px;}
+    100% {opacity: 1;}
+}
+
+.headTable {
+    align-items: center;
+}
+
+.headTable tr td {
+    color: white;
+    padding: 10px 0px 0px 21px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.headshotImg {
+    width: 230px;
+    height: 200px;
+    margin: 25px 0px 10px 40px;
+    border-radius: 50%;
+    border: 5px solid deepskyblue;
+    box-shadow: 0px 0px 15px deeppink;
+    animation-name: flipright;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipright {
+    0% {
+        padding-right: 220px;
+    }
+}
+
+.container h2 {
+    font-size: large;
+    text-align: center;
+    animation-name: slideup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideup {
+    0% {
+        margin-top: 400px;
+    }
+}
+
+.jklm {
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: hotpink;
+}
+
+.shortBio {
+    text-align: center;
+    font-size: large;
+    margin-top: 21px;
+    animation-name: slidein;
+    animation-duration: 10s;
+    color: darkred;
+    animation-fill-mode: forwards;
+}
+@keyframes slidein {
+    0% {
+        margin-left: 400px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        display: list-item;
+    }
+}
+
+h2 {
+    text-align: center;
+    padding: 21px;
+}
+
+.photoScreenDiv {
+    max-width: 320px;
+    height: 300px;
+    text-align: center;
+    background-color: plum;
+}
+
+.divScroll {
+    animation: scroll 45s linear infinite; 
+    animation-delay: 10s;
+}
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(850px);}
+}
+
+.photoScreen img {
+    width: auto;
+    max-height: 230px;
+    margin: 32px 21px 21px 21px;
+    border-radius: 30%;
+    box-shadow: 0px 0px 35px deepskyblue;
+    outline: 1px solid deeppink;
+}
