@@ -8,9 +8,9 @@
 }
 
 .header {
-    width: auto;
     background-color: hotpink;
     height: 70px;
+    text-align: center;
     box-shadow: 0px 4px 10px gray;
     animation-name: slidedown;
     animation-duration: 2s;
@@ -21,7 +21,8 @@
 }
 
 .headTable {
-    align-items: center;
+    text-align: center;
+    width: auto;
 }
 
 .headTable tr td {
@@ -29,12 +30,17 @@
     padding: 10px 0px 0px 21px;
     font-weight: 1000;
     text-align: center;
+    width: auto;
+}
+
+.headshotDiv {
+    text-align: center;
 }
 
 .headshotImg {
     width: 230px;
     height: 200px;
-    margin: 25px 0px 10px 40px;
+    margin: 25px 0px 10px 0px;
     border-radius: 50%;
     border: 5px solid deepskyblue;
     box-shadow: 0px 0px 15px deeppink;
@@ -67,14 +73,16 @@
     text-transform: uppercase;
     font-weight: 1000;
     color: hotpink;
+    margin: -10px 0px 7px;
 }
 
 .shortBio {
     text-align: center;
     font-size: large;
-    margin-top: 21px;
+    margin-left: -10px;
     animation-name: slidein;
     animation-duration: 10s;
+    max-height: 140px;
     color: darkred;
     animation-fill-mode: forwards;
 }
@@ -96,19 +104,27 @@ h2 {
 }
 
 .photoScreenDiv {
-    max-width: 320px;
+    max-width: auto;
     height: 300px;
     text-align: center;
     background-color: plum;
+    animation-name: rollup;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+    box-shadow: 0px 0px 30px gray;
+}
+@keyframes rollup {
+    0% {margin-top: 350px; opacity: 0.2;}
+    100% {opacity: 1;}
 }
 
 .divScroll {
-    animation: scroll 45s linear infinite; 
+    animation: scroll 60s linear infinite; 
     animation-delay: 10s;
 }
 @keyframes scroll {
-    0% {transform: translateX(0);}
-    100% {transform: translateX(850px);}
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-1021px);}
 }
 
 .photoScreen img {
@@ -118,4 +134,8 @@ h2 {
     border-radius: 30%;
     box-shadow: 0px 0px 35px deepskyblue;
     outline: 1px solid deeppink;
+}
+
+.audioDiv {
+    display: none;
 }
