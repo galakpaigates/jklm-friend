@@ -133,7 +133,7 @@ h2 {
     margin: 32px 21px 21px 21px;
     border-radius: 30%;
     box-shadow: 0px 0px 35px deepskyblue;
-    outline: 1px solid deeppink;
+    border: 1px solid deeppink;
 }
 
 .audioDiv {
